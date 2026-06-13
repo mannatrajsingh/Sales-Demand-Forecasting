@@ -73,7 +73,7 @@ Temporal: `lag_7`, `lag_14`, `lag_28`, `roll_mean_7`, `roll_std_7`, `roll_mean_3
 
 ## Getting started
 
-### Option A — run instantly, no data download (synthetic)
+### run instantly, no data download (synthetic)
 
 ```bash
 git clone https://github.com/mannatrajsingh/Sales-Demand-Forecasting.git
@@ -83,15 +83,6 @@ pip install pandas numpy scikit-learn matplotlib
 python generate_data.py        # creates the synthetic store_sales dataset
 # then open demand_forecasting_sklearn.ipynb, or run the script:
 python demand_forecasting.py    # uses LightGBM: pip install lightgbm
-```
-
-### Option B — the real Rossmann data (headline results)
-
-1. Get the Rossmann Store Sales data (Kaggle: *Rossmann Store Sales* competition) and place `train.csv` and `store.csv` in `rossmann-store-sales/`.
-2. Open **`demand_forecasting_xgboost.ipynb`** and run all cells.
-
-```bash
-pip install xgboost pandas numpy scikit-learn matplotlib
 ```
 
 ### Run on Google Colab
