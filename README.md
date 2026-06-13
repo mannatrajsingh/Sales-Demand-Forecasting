@@ -102,17 +102,4 @@ The notebooks run as-is on a free Colab instance:
 
 > **Heads-up on data files:** the pipeline only needs a CSV with columns `[Store, Date, Sales, Promo, Open, StoreType, IsHoliday]`. Rossmann's `train.csv` already has these, so you can point the loader at it with no other changes.
 
----
 
-## Limitations & next steps
-
-- **Single global model.** One model is trained across all stores; per-store or hierarchical models could capture store-specific dynamics better.
-- **Point forecasts only.** No prediction intervals — quantile loss or conformal prediction would add uncertainty estimates that are useful for inventory decisions.
-- **No external regressors.** Weather, local events, and competitor activity are not modeled and would likely help.
-- **Validation is a single recent window.** Rolling-origin (walk-forward) cross-validation would give a more robust estimate of generalization.
-
----
-
-## License
-
-Suggested: MIT. (Add a `LICENSE` file to the repo if you'd like others to reuse the code.)
